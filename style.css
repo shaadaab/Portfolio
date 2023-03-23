@@ -7,17 +7,26 @@
 }
 
 :root {
-  --primary-font: rgb(255, 255, 255);
+  --primary-color: rgb(255, 255, 255);
   --primary-family: "Poppins", sans-serif;
-
-  --secondary-font: ;
+  --primary-bg: rgb(0,0,0);
 }
+
+.light-theme{
+  --primary-color: rgb(0, 0, 0);
+  --primary-family: "Poppins", sans-serif;
+  --primary-bg: rgb(255,255,255);
+} 
+
+
+
+
 a{
   text-decoration: none;
 }
 
 body {
-  background-color: rgb(11, 11, 11);
+  background-color: var(--primary-bg);
 }
 
 .container {
@@ -29,7 +38,7 @@ body {
 }
 .left h1 {
   font-family: var(--primary-family);
-  color: var(--primary-font);
+  color: var(--primary-color);
   border: 3px solid red;
   padding: 10px 20px;
   box-shadow: yellow 6px 6px;
@@ -39,11 +48,35 @@ body {
 /* top heading   */
 
 .top-heading h1 {
-  color: var(--primary-font);
+  color: var(--primary-color);
   font-family: var(--primary-family);
   text-align: center;
   font-size: 4rem;
 }
+
+/* theme selection   */
+
+.theme{
+  font-family: var(--primary-family);
+  text-align: center;
+}
+
+.theme h3{
+  font-family: var(--primary-family);
+  color: var(--primary-color);
+  border: 3px solid red;
+  padding: 10px 20px;
+  box-shadow: yellow 6px 6px;
+  display: inline;
+}
+
+
+
+.theme:hover{
+  cursor:pointer;
+  transform:scale(0.8);
+}
+
 
 /* image-text- body  */
 
@@ -67,16 +100,33 @@ body {
   width: 60%;
 }
 .right-text p {
-  color: var(--primary-font);
+  color: var(--primary-color);
   font-family: var(--primary-family);
   font-size: 1.3rem;
   text-align: right;
 }
 
+.theme h3{
+  font-family: var(--primary-family);
+  color: var(--primary-color);
+  border: 3px solid red;
+  padding: 10px 20px;
+  box-shadow: yellow 6px 6px;
+  display: inline;
+  font-size: 1rem;
+}
+
+
+
+.theme:hover{
+  cursor:pointer;
+  transform:scale(0.8);
+}
+
 /* about projectss  */
 
 .about-web {
-  color: var(--primary-font);
+  color: var(--primary-color);
   font-family: var(--primary-family);
 }
 
@@ -98,7 +148,7 @@ body {
 
 
 .links a {
-  color: var(--primary-font);
+  color: var(--primary-color);
 }
 
 .up{
@@ -108,7 +158,7 @@ body {
 .blocks {
   margin-top: 40px;
   justify-content: space-around;
-  border: 2px solid white; 
+  border: 2px solid var(--primary-color); 
   padding: 10px 20px;
   
   width: 50%;
@@ -124,29 +174,66 @@ body {
   margin-right: auto;
 }
 
+.hide{
+  display: none;
+}
+
 .web1:hover{
   background:url(asets/1stweb.png);
-  background-size: cover;
   padding: 380px 0;
   width: 100%;
-  
-  
+}
+
+.web1:hover{
+  transition: ease-in-out 0.8s;
+  background-size: 240%;
 }
 .web2:hover{
   background:url(asets/2ndweb.png);
-  background-size: cover;
   padding: 360px 0;
   width: 100%;
-  
+}
+.web2:hover{
+  transition: ease-in-out 0.8s;
+  background-size: 240%;
 }
 
-.web1:hover p{
+.web1:hover .show{
   display: none;
 }
 
-.web2:hover p{
+.web2:hover .show{
   display: none;
 }
+
+.web1:hover .hide{
+  display: block;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.693);
+  border-radius: 40px;
+  padding: 60px 20px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.web2:hover .hide{
+  display: block;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.693);
+  border-radius: 40px;
+  padding: 60px 20px;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+
+
+
 
 
 
@@ -169,7 +256,7 @@ body {
   width: 70px;
 }
 .hyte{
-  color: white;
+  color: var(--primary-color);
   margin-bottom: 40px;
   font-family: var(--primary-family);
   font-size: 2.8rem;
@@ -211,7 +298,7 @@ body {
 
 .review{
   margin-top: 90px;
-  color: white;
+  color: var(--primary-color);
 }
 .review h2{
   font-family: var(--primary-family);
@@ -243,7 +330,7 @@ textarea{
 
 .socials{
   margin-top: 60px;
-  color: white;
+  color: var(--primary-color);
 }
 
 .socials h2{
@@ -266,7 +353,7 @@ textarea{
 
 .ftr{
   display: flex;
-  color: white;
+  color: var(--primary-color);
   font-family: var(--primary-family);
   background-color: rgb(22, 22, 22);
   height: 70px;
@@ -282,6 +369,7 @@ textarea{
   padding: 10px 20px;
   box-shadow: yellow 6px 6px;
   display: inline;
+  color: white;
 }
 
 
@@ -348,7 +436,7 @@ textarea{
     font-size: 0.6rem;
   }
   .right-text p {
-    color: var(--primary-font);
+    color: var(--primary-color);
     font-family: var(--primary-family);
     font-size: 1.3rem;
     text-align: center;
@@ -365,7 +453,7 @@ textarea{
   .blocks {
     margin-top: 40px;
     justify-content: space-around;
-    border: 2px solid white; 
+    border: 2px solid var(--primary-color); 
     padding: 10px 20px;
     width: 100%;
   }
@@ -389,7 +477,7 @@ textarea{
 }
 
 .links a {
-  color: rgb(255, 255, 255);
+  color: var(--primary-color);
   padding: 30px 3px;
   
 }
@@ -397,30 +485,62 @@ textarea{
 .blocks {
   margin-top: 40px;
   /* justify-content: space-around; */
-  border: 2px solid white; 
+  border: 2px solid var(--primary-color); 
   padding: 10px 10px;
 }
 
 .web1:hover{
-  background: url(asets/mob1.jpg);
-  background-size: cover;
+  background:url(asets/mob1.jpg);
   padding: 380px 0;
-   
+  width: 100%;
+}
+
+.web1:hover{
+  transition:ease-in-out 0.8s;
+  background-size: 240%;
 }
 .web2:hover{
   background:url(asets/mob2.jpg);
-  background-size:cover;
-  padding: 380px 0;
-  
+  padding: 360px 0;
+  width: 100%;
+}
+.web2:hover{
+  transition: ease-in-out 0.8s;
+  background-size: 240%;
 }
 
-.web1:hover p{
+.web1:hover .show{
   display: none;
 }
 
-.web2:hover p{
+.web2:hover .show{
   display: none;
 }
+
+.web1:hover .hide{
+  display: block;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.693);
+  border-radius: 40px;
+  padding: 0px 0px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.web2:hover .hide{
+  display: block;
+  margin: auto;
+  background-color: rgba(255, 252, 252, 0.693);
+  border-radius: 40px;
+  padding: 0px 0px;
+  width: 70vw;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1rem;
+}
+
 
 
 .plst{
@@ -514,9 +634,18 @@ textarea{
   padding: 10px 20px;
   box-shadow: yellow 6px 6px;
   background-color: black;
-  color: white;
+  color: var(--primary-color);
   font-weight: bold;
 }
+
+/* .btn2{
+  border: 3px solid red;
+  padding: 10px 20px;
+  box-shadow: yellow 6px 6px;
+  background-color: rgb(255, 255, 255);
+  color: var(--primary-color);
+  font-weight: bold;
+} */
 
 .review h2{
   font-size: 2rem;
@@ -524,7 +653,7 @@ textarea{
 }
 .ftr{
   display: flex;
-  color: white;
+  color: var(--primary-color);
   font-family: var(--primary-family);
   background-color: rgb(22, 22, 22);
   height: 50px;
@@ -623,7 +752,7 @@ textarea{
     font-size: 0.6rem;
   }
   .right-text p {
-    color: var(--primary-font);
+    color: var(--primary-color);
     font-family: var(--primary-family);
     font-size: 1.3rem;
     text-align: center;
