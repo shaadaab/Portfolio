@@ -440,6 +440,36 @@ textarea{
   max-width: 30%;
 }
 
+.html:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.css:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+
+.js:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+
+.java:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+
+.tw:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+
+
 .handles .container{
   margin: 0px;
   padding: 0px;
