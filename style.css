@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: rgb(255, 255, 255);
   --primary-family: "Poppins", sans-serif;
@@ -912,17 +916,6 @@ textarea{
 }
 
 
-
-
-
-
 }
-
-
-
-
-
-
-
 
  */
