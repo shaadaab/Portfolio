@@ -402,7 +402,7 @@ textarea {
   color: white;
 }
 
-/* media queries   */
+                                                           /* media queries   */
 
 @media screen and (max-width: 640px) {
   .container {
@@ -477,10 +477,6 @@ textarea {
     margin-right: auto;
   }
 
-  /* .links:hover{
-  width: 60vw;
-} */
-
   .links p {
     width: 100%;
   }
@@ -498,6 +494,46 @@ textarea {
   }
 
   .web1:hover {
+    background: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .web1:hover {
+    transition: none;
+    background-size:auto;
+  }
+
+  .web2:hover {
+    background:none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .web2:hover {
+    transition: none;
+    background-size: auto;
+  }
+
+  .web1:hover .show {
+    display: block;
+    
+  }
+
+  .web2:hover .show {
+    display: block;
+  }
+
+  .web1:hover .hide {
+    display: none;
+  }
+
+  .web2:hover .hide {
+    display: none;
+  }
+  
+
+  /* .web1:hover {
     background: url(asets/mob1.jpg);
     padding: 380px 0;
     width: 100%;
@@ -549,7 +585,7 @@ textarea {
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 1rem;
-  }
+  } */
 
   .plst {
     display: flex;
