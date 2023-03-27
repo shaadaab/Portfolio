@@ -89,7 +89,7 @@ body {
   width: 100%;
   background-color: var(--primary-bg);
   border-left: 2px solid var(--primary-color);
-  animation: animate 4s steps(12) infinite;
+  animation: animate 3s steps(12) infinite;
 }
 
 @keyframes animate {
@@ -271,6 +271,15 @@ body {
   font-size: 2rem;
 }
 
+h2.majors {
+  text-align: left;
+  text-decoration: overline;
+}
+
+h2.minor{
+  text-align: left;
+}
+
 /* skills section n  */
 
 .skllst {
@@ -295,10 +304,12 @@ body {
 
 .plst {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 120px;
-  align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 90px;
+    align-items: center;
+    gap: 70px 350px;
 }
 
 .html:hover {
@@ -451,15 +462,15 @@ textarea {
   }
 
   .about-web p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+
 
   .up {
     text-decoration: underline;
   }
 
   .blocks {
-    margin-top: 40px;
     justify-content: space-around;
     border: 2px solid var(--primary-color);
     padding: 10px 20px;
@@ -491,10 +502,9 @@ textarea {
   }
 
   .blocks {
-    margin-top: 40px;
-    /* justify-content: space-around; */
     border: 2px solid var(--primary-color);
     padding: 10px 10px;
+    margin-top: -10px;
   }
 
   .web1:hover {
@@ -536,66 +546,20 @@ textarea {
     display: none;
   }
   
-
-  /* .web1:hover {
-    background: url(asets/mob1.jpg);
-    padding: 380px 0;
-    width: 100%;
+  h2.majors{
+    font-size: 1.9rem;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
-  .web1:hover {
-    transition: ease-in-out 0.8s;
-    background-size: 240%;
-  }
-
-  .web2:hover {
-    background: url(asets/mob2.jpg);
-    padding: 360px 0;
-    width: 100%;
-  }
-
-  .web2:hover {
-    transition: ease-in-out 0.8s;
-    background-size: 240%;
-  }
-
-  .web1:hover .show {
-    display: none;
-  }
-
-  .web2:hover .show {
-    display: none;
-  }
-
-  .web1:hover .hide {
-    display: block;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.693);
-    border-radius: 40px;
-    padding: 0px 0px;
-    width: 50%;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .web2:hover .hide {
-    display: block;
-    margin: auto;
-    background-color: rgba(255, 252, 252, 0.693);
-    border-radius: 40px;
-    padding: 0px 0px;
-    width: 70vw;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 1rem;
-  } */
-
+ 
   .plst {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px 10px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 80px;
   }
 
   .plst img {

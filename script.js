@@ -25,12 +25,12 @@ const textLoad = () => {
 
   setTimeout(() => {
     text.textContent = " Draw🖍️";
-  }, 4000);
+  }, 3000);
 
   setTimeout(() => {
     text.textContent = " Read📖";
-  }, 8000);
+  }, 6000);
 };
 
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 9000);
